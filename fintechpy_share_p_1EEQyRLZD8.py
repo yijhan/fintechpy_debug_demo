@@ -20,7 +20,7 @@ PW = ""
 Account = ""
 
 # 想取得報價的股票代碼
-strStocks = 'TX00'
+strStocks = 'TSEA'
 #strStocks ='2317'
 
 # working functions, async coruntime to pump events
