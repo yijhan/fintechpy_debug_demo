@@ -128,4 +128,10 @@ message_pump(6)
 m_nCode = skO.GetRealBalanceReport(ID, Account)
 print('GetRealBalanceReport', m_nCode)
 
-message_pump(6)
+
+# 持續報價要一直pump
+while True:
+    pythoncom.PumpWaitingMessages()
+    time.sleep(0.01)  # Prevent CPU overload
+
+
